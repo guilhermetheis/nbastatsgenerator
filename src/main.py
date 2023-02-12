@@ -6,34 +6,47 @@ Created on Sat Feb 11 15:43:41 2023
 """
 
 ## Import space
-import pandas as pd
-import numpy as np
 import re
-from datetime import datetime
-from pytz import timezone
-#from dotenv import load_dotenv
-from bs4 import BeautifulSoup
-import requests
+import urllib
+from time import sleep
+import json
+import pandas as pd
+from itertools import chain
 
-#load_dotenv()
+## functions space
+# This method finds the urls for each of the rosters in the NBA using regexes.
 
-# LUT
+def remove(list):
+    pattern = '[0-9]'
+    list = [re.sub(pattern, '', i) for i in list]
+    return list
 
-#listOfTeams = {'https://www.espn.com/nba/team/roster/_/name/bos/boston-celtics'}
+def generate_player_info(rosters):
+    table_roster_init = pd.read_html(rosters)[0]
+    table_roster_links_init = pd.read_html(rosters,extract_links='body')[0] 
+    table_roster_links = table_roster_links_init['Name']
+    names = []
+    espn_links = []
+    for i in range(len(table_roster_links)):
+        names.append(table_roster_links[i][0])
+        espn_links.append(str(table_roster_links[i][1]))
+    names = remove(names)
+    table_roster_dropped = (table_roster_init.copy())
 
-#for urls in listOfTeams:
- #   table_roster_init = pd.read_html(urls)[0]  
-    
-r = requests.get('https://www.espn.com/nba/player/_/id/2566769/malcolm-brogdon')
-source = r.content
-soup = BeautifulSoup(r.content, 'lxml') 
+    name_link_dict = {}
 
-altlinks = []
-imgalt_list = {"Malcolm Brogdon"}
+    for i in range(len(table_roster_links)):
+        name_link_dict[names[i]] = espn_links[i]
+        
+    return table_roster_dropped,name_link_dict
 
-for x in soup.find_all('img', alt= True): #we find all img alt names
-    #print(x)
-    if x['alt'] in imgalt_list and x['data-mptype'] == "image": #if alt name matchs with your numbers
-        print(x)
-        #altlinks.append(x.get('src')) #adding into list
-#print(altlinks)
+# scrape player information from rosters
+
+with open('../data/teamsUrls.json') as infile:
+    rosters = json.load(infile)
+
+all_players_general = dict()
+all_players_liks = dict()
+for team in rosters.keys():
+    print("Gathering player info for team: " + team)
+    all_players_general[team], all_players_liks[team] = generate_player_info(rosters[team])
