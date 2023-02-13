@@ -12,6 +12,7 @@ This project intends to generate daily data for each team and each player of the
 
 - [X] Extract all teams
 - [X] Extract all player infos
-- [ ] Create a table out of it
+- [X] Create a table out of it
+- [ ] Create filtering (need to take out TWs)
 
 
