@@ -18,7 +18,7 @@ jobs:
 
       - name: Install requirements and run script
         run: |
-          pip install -r src/requirements_windows.txt
+          pip install -r src/requirements.txt
           python src/extractPlayersStats.py
     
       - name: Commit scrapping
