@@ -1,0 +1,30 @@
+Name: Reddit Sidebar Updater
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 12 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setting up Python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.9"
+
+      - name: Install requirements and run script
+        env:
+        run: |
+          pip install -r src/requirements_windows.txt
+          python src/extractPlayersStats.py
+    
+      - name: Commit scrapping
+        run: |
+          git config --global user.name 'guilhermetheis'
+          git config --global user.email 'guilhermetheis15@gmail.com'
+          git commit -am "Automated report"
+          git push

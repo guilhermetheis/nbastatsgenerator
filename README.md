@@ -14,6 +14,7 @@ This project intends to generate daily data for each team and each player of the
 - [X] Extract all player infos
 - [X] Create a table out of it
 - [X] Create filtering (need to take out TWs)
+- [ ] Imrpove doc
 - [ ] Get the images from teams and players
 - [ ] Start post-processing
 

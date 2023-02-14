@@ -24,6 +24,6 @@ def build_team_urls():
     return dict(zip(teams.values(), roster_urls))
 
 rosters = build_team_urls()
-
+    
 with open('../data/teamsUrls.json', 'w') as fp:
     json.dump(rosters,fp)
