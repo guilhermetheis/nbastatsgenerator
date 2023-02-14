@@ -53,7 +53,7 @@ def generate_player_info(rosters): # already cleans up a lot
 
 # scrape player information from rosters
 
-with open('../data/teamsUrls.json') as infile:
+with open('data/teamsUrls.json') as infile:
     rosters = json.load(infile)
 
 all_players_general = dict()
@@ -69,7 +69,7 @@ for team in all_players_general.keys():
     all_players_df = all_players_df.append(team_df)
 
 all_players_df = all_players_df.reset_index(drop=True)#reset all indexes
-all_players_df.to_json('../data/general_info_players.json')
+all_players_df.to_json('data/general_info_players.json')
 
 
 print('Now gathering career stats on all players (may take a while):')
@@ -137,11 +137,11 @@ for index, row in all_players_df.iterrows():
             })
 
 regularSeasonStats = pd.DataFrame(stats)
-regularSeasonStats.to_json('../data/allTeams/'+ datetime.today().strftime('%d-%m-%Y') + '.json')
+regularSeasonStats.to_json('data/allTeams/'+ datetime.today().strftime('%d-%m-%Y') + '.json')
 
 for squad, n_df in regularSeasonStats.groupby('Team'):
-    if not os.path.exists('../data/'+squad.split(r'-')[0]+squad.split(r'-')[1]):
-        os.makedirs('../data/'+squad.split(r'-')[0]+squad.split(r'-')[1])
-        n_df.to_json('../data/'+squad.split(r'-')[0]+squad.split(r'-')[1]+'/'+ datetime.today().strftime('%d-%m-%Y') + '.json')
+    if not os.path.exists('data/'+squad.split(r'-')[0]+squad.split(r'-')[1]):
+        os.makedirs('data/'+squad.split(r'-')[0]+squad.split(r'-')[1])
+        n_df.to_json('data/'+squad.split(r'-')[0]+squad.split(r'-')[1]+'/'+ datetime.today().strftime('%d-%m-%Y') + '.json')
     else:
-        n_df.to_json('../data/'+squad.split(r'-')[0]+squad.split(r'-')[1]+'/'+ datetime.today().strftime('%d-%m-%Y') + '.json')
+        n_df.to_json('data/'+squad.split(r'-')[0]+squad.split(r'-')[1]+'/'+ datetime.today().strftime('%d-%m-%Y') + '.json')
