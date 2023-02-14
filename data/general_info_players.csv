@@ -119,7 +119,7 @@
 117,Alec Burks,SG,31,"6' 6""",214 lbs,Colorado,10.0,detroit-pistons
 118,James Wiseman,C,21,"7' 0""",240 lbs,Memphis,9.6,detroit-pistons
 119,Nerlens Noel,C,28,"6' 10""",220 lbs,Kentucky,9.2,detroit-pistons
-120,Jaden Ivey,PG,20,"6' 4""",195 lbs,Purdue,7.3,detroit-pistons
+120,Jaden Ivey,PG,21,"6' 4""",195 lbs,Purdue,7.3,detroit-pistons
 121,Killian Hayes,PG,21,"6' 5""",195 lbs,--,5.6,detroit-pistons
 122,Hamidou Diallo,SG,24,"6' 5""",202 lbs,Kentucky,5.2,detroit-pistons
 123,Cory Joseph,PG,31,"6' 3""",200 lbs,Texas,5.2,detroit-pistons
@@ -135,91 +135,91 @@
 133,Daniel Theis,C,30,"6' 8""",245 lbs,--,8.7,indiana-pacers
 134,T.J. McConnell,PG,30,"6' 1""",190 lbs,Arizona,8.1,indiana-pacers
 135,Bennedict Mathurin,SG,20,"6' 5""",210 lbs,Arizona,6.6,indiana-pacers
-136,Goga Bitadze,C,23,"6' 11""",250 lbs,--,4.8,indiana-pacers
-137,Jalen Smith,PF,22,"6' 9""",215 lbs,Maryland,4.7,indiana-pacers
-138,Tyrese Haliburton,PG,22,"6' 5""",185 lbs,Iowa State,4.2,indiana-pacers
-139,George Hill,PG,36,"6' 4""",188 lbs,IUPUI,4.0,indiana-pacers
-140,Chris Duarte,SG,25,"6' 5""",190 lbs,Oregon,3.9,indiana-pacers
-141,Aaron Nesmith,SF,23,"6' 5""",215 lbs,Vanderbilt,3.8,indiana-pacers
-142,Jordan Nwora,SF,24,"6' 8""",225 lbs,Louisville,3.0,indiana-pacers
-143,Isaiah Jackson,SF,21,"6' 9""",205 lbs,Kentucky,2.6,indiana-pacers
-144,Andrew Nembhard,PG,23,"6' 3""",191 lbs,Gonzaga,2.2,indiana-pacers
-145,Oshae Brissett,SF,24,"6' 7""",210 lbs,Syracuse,1.8,indiana-pacers
-146,Serge Ibaka,F,33,"6' 10""",235 lbs,--,1.8,indiana-pacers
-147,James Johnson,PF,35,"6' 7""",240 lbs,Wake Forest,1.8,indiana-pacers
-148,Trevelin Queen,SG,25,"6' 6""",190 lbs,New Mexico State,1.6,indiana-pacers
-149,Terry Taylor,SF,23,"6' 4""",230 lbs,Austin Peay,1.6,indiana-pacers
-150,Kendall Brown,SG,19,"6' 7""",205 lbs,Baylor,,indiana-pacers
-151,Giannis Antetokounmpo,PF,28,"6' 11""",242 lbs,--,42.5,milwaukee-bucks
-152,Khris Middleton,SF,31,"6' 7""",222 lbs,Texas A&M,37.9,milwaukee-bucks
-153,Jrue Holiday,PG,32,"6' 4""",205 lbs,UCLA,33.7,milwaukee-bucks
-154,Brook Lopez,C,34,"7' 0""",282 lbs,Stanford,13.9,milwaukee-bucks
-155,Bobby Portis,F,28,"6' 10""",250 lbs,Arkansas,10.8,milwaukee-bucks
-156,Jae Crowder,PF,32,"6' 6""",235 lbs,Marquette,10.2,milwaukee-bucks
-157,Grayson Allen,SG,27,"6' 4""",198 lbs,Duke,8.5,milwaukee-bucks
-158,Joe Ingles,SG,35,"6' 8""",220 lbs,--,6.5,milwaukee-bucks
-159,Pat Connaughton,SG,30,"6' 5""",209 lbs,Notre Dame,5.7,milwaukee-bucks
-160,MarJon Beauchamp,G,22,"6' 7""",199 lbs,--,2.5,milwaukee-bucks
-161,Jevon Carter,PG,27,"6' 1""",200 lbs,West Virginia,2.1,milwaukee-bucks
-162,Thanasis Antetokounmpo,SF,30,"6' 7""",219 lbs,--,1.9,milwaukee-bucks
-163,Wesley Matthews,SG,36,"6' 4""",220 lbs,Marquette,1.8,milwaukee-bucks
-164,AJ Green,G,23,"6' 5""",190 lbs,Northern Iowa,,milwaukee-bucks
-165,Sandro Mamukelashvili,PF,23,"6' 10""",240 lbs,Seton Hall,,milwaukee-bucks
-166,Trae Young,PG,24,"6' 1""",164 lbs,Oklahoma,37.1,atlanta-hawks
-167,John Collins,PF,25,"6' 9""",226 lbs,Wake Forest,23.5,atlanta-hawks
-168,Clint Capela,C,28,"6' 10""",256 lbs,--,18.7,atlanta-hawks
-169,Bogdan Bogdanovic,SG,30,"6' 5""",225 lbs,--,18.0,atlanta-hawks
-170,Dejounte Murray,SG,26,"6' 5""",180 lbs,Washington,16.6,atlanta-hawks
-171,De'Andre Hunter,SF,25,"6' 8""",221 lbs,Virginia,9.8,atlanta-hawks
-172,Onyeka Okongwu,PF,22,"6' 9""",240 lbs,USC,6.4,atlanta-hawks
-173,AJ Griffin,F,19,"6' 6""",222 lbs,Duke,3.5,atlanta-hawks
-174,Saddiq Bey,SF,23,"6' 7""",215 lbs,Villanova,3.0,atlanta-hawks
-175,Jalen Johnson,SF,21,"6' 8""",219 lbs,Duke,2.8,atlanta-hawks
-176,Bruno Fernando,PF,24,"6' 10""",240 lbs,Maryland,2.7,atlanta-hawks
-177,Garrison Mathews,SG,26,"6' 6""",215 lbs,Lipscomb,2.0,atlanta-hawks
-178,Aaron Holiday,G,26,"6' 0""",185 lbs,UCLA,1.8,atlanta-hawks
-179,Vit Krejci,G,22,"6' 8""",195 lbs,--,1.6,atlanta-hawks
-180,Tyrese Martin,G,23,"6' 6""",215 lbs,Connecticut,1.0,atlanta-hawks
-181,Trent Forrest,G,24,"6' 4""",210 lbs,Florida State,,atlanta-hawks
-182,Donovan Williams,G,21,"6' 6""",190 lbs,UNLV,,atlanta-hawks
-183,Gordon Hayward,SF,32,"6' 7""",225 lbs,Butler,30.1,charlotte-hornets
-184,Terry Rozier,SG,28,"6' 1""",190 lbs,Louisville,21.5,charlotte-hornets
-185,Kelly Oubre Jr.,SG,27,"6' 6""",203 lbs,Kansas,12.6,charlotte-hornets
-186,LaMelo Ball,PG,21,"6' 7""",180 lbs,--,8.6,charlotte-hornets
-187,Cody Martin,SF,27,"6' 6""",205 lbs,Nevada,7.0,charlotte-hornets
-188,P.J. Washington,PF,24,"6' 7""",230 lbs,Kentucky,5.8,charlotte-hornets
-189,James Bouknight,SG,22,"6' 4""",190 lbs,Connecticut,4.4,charlotte-hornets
-190,Mark Williams,C,21,"7' 0""",240 lbs,Duke,3.7,charlotte-hornets
-191,Kai Jones,PF,22,"6' 11""",221 lbs,Texas,2.9,charlotte-hornets
-192,Theo Maledon,PG,21,"6' 5""",175 lbs,--,1.9,charlotte-hornets
-193,Svi Mykhailiuk,SG,25,"6' 7""",205 lbs,Kansas,1.8,charlotte-hornets
-194,Dennis Smith Jr.,PG,25,"6' 2""",205 lbs,NC State,1.8,charlotte-hornets
-195,Nick Richards,C,25,"7' 0""",245 lbs,Kentucky,1.8,charlotte-hornets
-196,JT Thor,F,20,"6' 9""",203 lbs,Auburn,1.6,charlotte-hornets
-197,Bryce McGowens,G,20,"6' 6""",175 lbs,Nebraska,,charlotte-hornets
-198,Jimmy Butler,SF,33,"6' 7""",230 lbs,Marquette,37.7,miami-heat
-199,Bam Adebayo,C,25,"6' 9""",255 lbs,Kentucky,30.4,miami-heat
-200,Kyle Lowry,PG,36,"6' 0""",196 lbs,Villanova,28.3,miami-heat
-201,Duncan Robinson,F,28,"6' 7""",215 lbs,Michigan,16.9,miami-heat
-202,Victor Oladipo,SG,30,"6' 4""",213 lbs,Indiana,8.8,miami-heat
-203,Caleb Martin,SF,27,"6' 5""",205 lbs,Nevada,6.5,miami-heat
-204,Tyler Herro,PG,23,"6' 5""",195 lbs,Kentucky,5.7,miami-heat
-205,Nikola Jovic,F,19,"6' 10""",205 lbs,--,2.2,miami-heat
-206,Udonis Haslem,PF,42,"6' 8""",235 lbs,Florida,1.8,miami-heat
-207,Max Strus,SG,26,"6' 5""",215 lbs,DePaul,1.8,miami-heat
-208,Gabe Vincent,PG,26,"6' 3""",200 lbs,UC Santa Barbara,1.8,miami-heat
-209,Haywood Highsmith,F,26,"6' 4""",220 lbs,Wheeling Jesuit,1.8,miami-heat
-210,Omer Yurtseven,C,24,"6' 11""",275 lbs,Georgetown,1.8,miami-heat
-211,Jamaree Bouyea,G,23,"6' 2""",180 lbs,San Francisco,,miami-heat
-212,Jamal Cain,F,23,"6' 7""",191 lbs,Oakland,,miami-heat
-213,Orlando Robinson,C,22,"7' 0""",235 lbs,Fresno State,,miami-heat
-214,Jonathan Isaac,PF,25,"6' 10""",230 lbs,Florida State,17.4,orlando-magic
-215,Markelle Fultz,PG,24,"6' 4""",209 lbs,Washington,16.5,orlando-magic
-216,Wendell Carter Jr.,C,23,"6' 10""",270 lbs,Duke,14.2,orlando-magic
-217,Gary Harris,SG,28,"6' 4""",210 lbs,Michigan State,13.0,orlando-magic
-218,Paolo Banchero,PF,20,"6' 10""",250 lbs,Duke,11.1,orlando-magic
-219,Jalen Suggs,SG,21,"6' 5""",205 lbs,Gonzaga,6.9,orlando-magic
-220,Franz Wagner,SF,21,"6' 10""",220 lbs,Michigan,5.3,orlando-magic
+136,Jalen Smith,PF,22,"6' 9""",215 lbs,Maryland,4.7,indiana-pacers
+137,Tyrese Haliburton,PG,22,"6' 5""",185 lbs,Iowa State,4.2,indiana-pacers
+138,George Hill,PG,36,"6' 4""",188 lbs,IUPUI,4.0,indiana-pacers
+139,Chris Duarte,SG,25,"6' 5""",190 lbs,Oregon,3.9,indiana-pacers
+140,Aaron Nesmith,SF,23,"6' 5""",215 lbs,Vanderbilt,3.8,indiana-pacers
+141,Jordan Nwora,SF,24,"6' 8""",225 lbs,Louisville,3.0,indiana-pacers
+142,Isaiah Jackson,SF,21,"6' 9""",205 lbs,Kentucky,2.6,indiana-pacers
+143,Andrew Nembhard,PG,23,"6' 3""",191 lbs,Gonzaga,2.2,indiana-pacers
+144,Oshae Brissett,SF,24,"6' 7""",210 lbs,Syracuse,1.8,indiana-pacers
+145,Serge Ibaka,F,33,"6' 10""",235 lbs,--,1.8,indiana-pacers
+146,James Johnson,PF,35,"6' 7""",240 lbs,Wake Forest,1.8,indiana-pacers
+147,Trevelin Queen,SG,25,"6' 6""",190 lbs,New Mexico State,1.6,indiana-pacers
+148,Terry Taylor,SF,23,"6' 4""",230 lbs,Austin Peay,1.6,indiana-pacers
+149,Kendall Brown,SG,19,"6' 7""",205 lbs,Baylor,,indiana-pacers
+150,Giannis Antetokounmpo,PF,28,"6' 11""",242 lbs,--,42.5,milwaukee-bucks
+151,Khris Middleton,SF,31,"6' 7""",222 lbs,Texas A&M,37.9,milwaukee-bucks
+152,Jrue Holiday,PG,32,"6' 4""",205 lbs,UCLA,33.7,milwaukee-bucks
+153,Brook Lopez,C,34,"7' 0""",282 lbs,Stanford,13.9,milwaukee-bucks
+154,Bobby Portis,F,28,"6' 10""",250 lbs,Arkansas,10.8,milwaukee-bucks
+155,Jae Crowder,PF,32,"6' 6""",235 lbs,Marquette,10.2,milwaukee-bucks
+156,Grayson Allen,SG,27,"6' 4""",198 lbs,Duke,8.5,milwaukee-bucks
+157,Joe Ingles,SG,35,"6' 8""",220 lbs,--,6.5,milwaukee-bucks
+158,Pat Connaughton,SG,30,"6' 5""",209 lbs,Notre Dame,5.7,milwaukee-bucks
+159,MarJon Beauchamp,G,22,"6' 7""",199 lbs,--,2.5,milwaukee-bucks
+160,Jevon Carter,PG,27,"6' 1""",200 lbs,West Virginia,2.1,milwaukee-bucks
+161,Thanasis Antetokounmpo,SF,30,"6' 7""",219 lbs,--,1.9,milwaukee-bucks
+162,Wesley Matthews,SG,36,"6' 4""",220 lbs,Marquette,1.8,milwaukee-bucks
+163,AJ Green,G,23,"6' 5""",190 lbs,Northern Iowa,,milwaukee-bucks
+164,Sandro Mamukelashvili,PF,23,"6' 10""",240 lbs,Seton Hall,,milwaukee-bucks
+165,Trae Young,PG,24,"6' 1""",164 lbs,Oklahoma,37.1,atlanta-hawks
+166,John Collins,PF,25,"6' 9""",226 lbs,Wake Forest,23.5,atlanta-hawks
+167,Clint Capela,C,28,"6' 10""",256 lbs,--,18.7,atlanta-hawks
+168,Bogdan Bogdanovic,SG,30,"6' 5""",225 lbs,--,18.0,atlanta-hawks
+169,Dejounte Murray,SG,26,"6' 5""",180 lbs,Washington,16.6,atlanta-hawks
+170,De'Andre Hunter,SF,25,"6' 8""",221 lbs,Virginia,9.8,atlanta-hawks
+171,Onyeka Okongwu,PF,22,"6' 9""",240 lbs,USC,6.4,atlanta-hawks
+172,AJ Griffin,F,19,"6' 6""",222 lbs,Duke,3.5,atlanta-hawks
+173,Saddiq Bey,SF,23,"6' 7""",215 lbs,Villanova,3.0,atlanta-hawks
+174,Jalen Johnson,SF,21,"6' 8""",219 lbs,Duke,2.8,atlanta-hawks
+175,Bruno Fernando,PF,24,"6' 10""",240 lbs,Maryland,2.7,atlanta-hawks
+176,Garrison Mathews,SG,26,"6' 6""",215 lbs,Lipscomb,2.0,atlanta-hawks
+177,Aaron Holiday,G,26,"6' 0""",185 lbs,UCLA,1.8,atlanta-hawks
+178,Vit Krejci,G,22,"6' 8""",195 lbs,--,1.6,atlanta-hawks
+179,Tyrese Martin,G,23,"6' 6""",215 lbs,Connecticut,1.0,atlanta-hawks
+180,Trent Forrest,G,24,"6' 4""",210 lbs,Florida State,,atlanta-hawks
+181,Donovan Williams,G,21,"6' 6""",190 lbs,UNLV,,atlanta-hawks
+182,Gordon Hayward,SF,32,"6' 7""",225 lbs,Butler,30.1,charlotte-hornets
+183,Terry Rozier,SG,28,"6' 1""",190 lbs,Louisville,21.5,charlotte-hornets
+184,Kelly Oubre Jr.,SG,27,"6' 6""",203 lbs,Kansas,12.6,charlotte-hornets
+185,LaMelo Ball,PG,21,"6' 7""",180 lbs,--,8.6,charlotte-hornets
+186,Cody Martin,SF,27,"6' 6""",205 lbs,Nevada,7.0,charlotte-hornets
+187,P.J. Washington,PF,24,"6' 7""",230 lbs,Kentucky,5.8,charlotte-hornets
+188,James Bouknight,SG,22,"6' 4""",190 lbs,Connecticut,4.4,charlotte-hornets
+189,Mark Williams,C,21,"7' 0""",240 lbs,Duke,3.7,charlotte-hornets
+190,Kai Jones,PF,22,"6' 11""",221 lbs,Texas,2.9,charlotte-hornets
+191,Theo Maledon,PG,21,"6' 5""",175 lbs,--,1.9,charlotte-hornets
+192,Svi Mykhailiuk,SG,25,"6' 7""",205 lbs,Kansas,1.8,charlotte-hornets
+193,Dennis Smith Jr.,PG,25,"6' 2""",205 lbs,NC State,1.8,charlotte-hornets
+194,Nick Richards,C,25,"7' 0""",245 lbs,Kentucky,1.8,charlotte-hornets
+195,JT Thor,F,20,"6' 9""",203 lbs,Auburn,1.6,charlotte-hornets
+196,Bryce McGowens,G,20,"6' 6""",175 lbs,Nebraska,,charlotte-hornets
+197,Jimmy Butler,SF,33,"6' 7""",230 lbs,Marquette,37.7,miami-heat
+198,Bam Adebayo,C,25,"6' 9""",255 lbs,Kentucky,30.4,miami-heat
+199,Kyle Lowry,PG,36,"6' 0""",196 lbs,Villanova,28.3,miami-heat
+200,Duncan Robinson,F,28,"6' 7""",215 lbs,Michigan,16.9,miami-heat
+201,Victor Oladipo,SG,30,"6' 4""",213 lbs,Indiana,8.8,miami-heat
+202,Caleb Martin,SF,27,"6' 5""",205 lbs,Nevada,6.5,miami-heat
+203,Tyler Herro,PG,23,"6' 5""",195 lbs,Kentucky,5.7,miami-heat
+204,Nikola Jovic,F,19,"6' 10""",205 lbs,--,2.2,miami-heat
+205,Udonis Haslem,PF,42,"6' 8""",235 lbs,Florida,1.8,miami-heat
+206,Max Strus,SG,26,"6' 5""",215 lbs,DePaul,1.8,miami-heat
+207,Gabe Vincent,PG,26,"6' 3""",200 lbs,UC Santa Barbara,1.8,miami-heat
+208,Haywood Highsmith,F,26,"6' 4""",220 lbs,Wheeling Jesuit,1.8,miami-heat
+209,Omer Yurtseven,C,24,"6' 11""",275 lbs,Georgetown,1.8,miami-heat
+210,Jamaree Bouyea,G,23,"6' 2""",180 lbs,San Francisco,,miami-heat
+211,Jamal Cain,F,23,"6' 7""",191 lbs,Oakland,,miami-heat
+212,Orlando Robinson,C,22,"7' 0""",235 lbs,Fresno State,,miami-heat
+213,Jonathan Isaac,PF,25,"6' 10""",230 lbs,Florida State,17.4,orlando-magic
+214,Markelle Fultz,PG,24,"6' 4""",209 lbs,Washington,16.5,orlando-magic
+215,Wendell Carter Jr.,C,23,"6' 10""",270 lbs,Duke,14.2,orlando-magic
+216,Gary Harris,SG,28,"6' 4""",210 lbs,Michigan State,13.0,orlando-magic
+217,Paolo Banchero,PF,20,"6' 10""",250 lbs,Duke,11.1,orlando-magic
+218,Jalen Suggs,SG,21,"6' 5""",205 lbs,Gonzaga,6.9,orlando-magic
+219,Franz Wagner,SF,21,"6' 10""",220 lbs,Michigan,5.3,orlando-magic
+220,Goga Bitadze,C,23,"6' 11""",250 lbs,--,4.8,orlando-magic
 221,Cole Anthony,PG,22,"6' 3""",185 lbs,North Carolina,3.6,orlando-magic
 222,Chuma Okeke,PF,24,"6' 8""",229 lbs,Auburn,3.4,orlando-magic
 223,R.J. Hampton,PG,22,"6' 4""",175 lbs,--,2.4,orlando-magic
@@ -441,7 +441,7 @@
 439,TyTy Washington Jr.,G,21,"6' 3""",195 lbs,Kentucky,2.2,houston-rockets
 440,Frank Kaminsky,PF,29,"7' 0""",240 lbs,Wisconsin,1.8,houston-rockets
 441,Kenyon Martin Jr.,F,22,"6' 7""",215 lbs,--,1.8,houston-rockets
-442,Daishen Nix,SG,20,"6' 4""",226 lbs,--,1.6,houston-rockets
+442,Daishen Nix,SG,21,"6' 4""",226 lbs,--,1.6,houston-rockets
 443,Darius Days,F,23,"6' 7""",245 lbs,LSU,,houston-rockets
 444,Trevor Hudgins,G,23,"6' 0""",180 lbs,Northwest Missouri State,,houston-rockets
 445,Jaren Jackson Jr.,PF,23,"6' 11""",242 lbs,Michigan State,28.9,memphis-grizzlies
