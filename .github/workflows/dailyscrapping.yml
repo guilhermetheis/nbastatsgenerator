@@ -1,4 +1,4 @@
-Name: Reddit Sidebar Updater
+name: Reddit Sidebar Updater
 
 on:
   workflow_dispatch:
