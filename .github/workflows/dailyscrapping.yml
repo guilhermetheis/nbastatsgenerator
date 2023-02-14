@@ -17,7 +17,6 @@ jobs:
           python-version: "3.9"
 
       - name: Install requirements and run script
-        env:
         run: |
           pip install -r src/requirements_windows.txt
           python src/extractPlayersStats.py
