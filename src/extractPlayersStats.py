@@ -137,7 +137,16 @@ for index, row in all_players_df.iterrows():
             })
 
 regularSeasonStats = pd.DataFrame(stats)
-regularSeasonStats.to_json('data/allTeams/'+ datetime.today().strftime('%d-%m-%Y') + '.json')
+
+if not os.path.exists('data/allTeams'):
+     os.makedirs('data/allTeams')
+     regularSeasonStats.to_json('data/allTeams/'+ datetime.today().strftime('%d-%m-%Y') + '.json')
+
+else:
+     regularSeasonStats.to_json('data/allTeams/'+ datetime.today().strftime('%d-%m-%Y') + '.json')
+
+
+print('Creating json files:')
 
 for squad, n_df in regularSeasonStats.groupby('Team'):
     if not os.path.exists('data/'+squad.split(r'-')[0]+squad.split(r'-')[1]):
