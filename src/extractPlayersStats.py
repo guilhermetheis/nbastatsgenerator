@@ -11,8 +11,10 @@ import json
 import pandas as pd
 import numpy as np
 from datetime import datetime
-import os
+import time
 
+
+start = time.time() # check time elapsed
 ## functions space
 # This method finds the urls for each of the rosters in the NBA using regexes.
 
@@ -138,19 +140,16 @@ for index, row in all_players_df.iterrows():
 
 regularSeasonStats = pd.DataFrame(stats)
 
-if not os.path.exists('data/allTeams'):
-     os.makedirs('data/allTeams')
-     regularSeasonStats.to_json('data/allTeams/'+ datetime.today().strftime('%d-%m-%Y') + '.json')
 
-else:
-     regularSeasonStats.to_json('data/allTeams/'+ datetime.today().strftime('%d-%m-%Y') + '.json')
 
 
 print('Creating json files:')
 
+regularSeasonStats.to_json('data/allTeams/'+ datetime.today().strftime('%d-%m-%Y') + '.json')
+
 for squad, n_df in regularSeasonStats.groupby('Team'):
-    if not os.path.exists('data/'+squad.split(r'-')[0]+squad.split(r'-')[1]):
-        os.makedirs('data/'+squad.split(r'-')[0]+squad.split(r'-')[1])
-        n_df.to_json('data/'+squad.split(r'-')[0]+squad.split(r'-')[1]+'/'+ datetime.today().strftime('%d-%m-%Y') + '.json')
-    else:
-        n_df.to_json('data/'+squad.split(r'-')[0]+squad.split(r'-')[1]+'/'+ datetime.today().strftime('%d-%m-%Y') + '.json')
+    n_df.to_json('data/'+squad.split(r'-')[0]+squad.split(r'-')[1]+'/'+ datetime.today().strftime('%d-%m-%Y') + '.json')
+    
+    
+end = time.time()
+print('Time elapsed = ' + str(end - start) + ' seconds')
