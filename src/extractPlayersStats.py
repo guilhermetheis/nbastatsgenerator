@@ -77,7 +77,7 @@ all_players_df.to_json('data/general_info_players.json')
 print('Now gathering career stats on all players (may take a while):')
 
 
-career_stats_df = pd.DataFrame(columns = ['Name', 'Team' 'GP','GS','MIN','FGM', 'FGA','FG%','3PTM','3PTA','3P%','FTM','FTA','FT%','OR','DR','REB','AST','BLK','STL','PF','TO','PTS'])
+career_stats_df = pd.DataFrame(columns = ['Name', 'Team' 'GP','GS','MIN','FGM', 'FGA','FG%','3PTM','3PTA','3P%','FTM','FTA','FT%','OR','DR','REB','AST','BLK','STL','PF','TO','PTS', 'Date'])
 
 career_stats_df = pd.DataFrame() # make this a function. Can add advanced, totals, carrers. 
 stats = []
@@ -109,6 +109,7 @@ for index, row in all_players_df.iterrows():
             'PF': float(career_stats['PF']),
             'TO': float(career_stats['TO']),
             'PTS': float(career_stats['PTS']),
+            'Date': datetime.today().strftime('%d-%m-%Y')
             })
         
     else:
