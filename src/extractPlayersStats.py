@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-"""
+'''
 Created on Sat Feb 11 15:43:41 2023
 
 @author: Guilherme Theis
-"""
+'''
 
 ## Import space
 import re
@@ -12,6 +12,8 @@ import pandas as pd
 import numpy as np
 from datetime import datetime
 import time
+import requests
+from bs4 import BeautifulSoup
 
 
 start = time.time() # check time elapsed
@@ -74,7 +76,7 @@ all_players_df = all_players_df.reset_index(drop=True)#reset all indexes
 all_players_df.to_json('data/general_info_players.json')
 
 
-print('Now gathering career stats on all players (may take a while):')
+print('Now gathering stats for each player (may take a while):')
 
 
 career_stats_df = pd.DataFrame(columns = ['Name', 'Team' 'GP','GS','MIN','FGM', 'FGA','FG%','3PTM','3PTA','3P%','FTM','FTA','FT%','OR','DR','REB','AST','BLK','STL','PF','TO','PTS', 'Date'])
@@ -150,7 +152,59 @@ regularSeasonStats.to_json('data/allTeams/'+ datetime.today().strftime('%d-%m-%Y
 
 for squad, n_df in regularSeasonStats.groupby('Team'):
     n_df.to_json('data/'+squad.split(r'-')[0]+squad.split(r'-')[1]+'/'+ datetime.today().strftime('%d-%m-%Y') + '.json')
+
+#Teams advanced stats
+
+print('Getting advanced stats for teams: ')
+url = 'http://www.espn.com/nba/hollinger/teamstats'
+
+data = pd.read_html(url)[0].iloc[1:]
+data.columns = data.iloc[0]
+data = data.iloc[1:, 1:].reset_index()
+data = data.iloc[:,1:]
+data.insert(len(data.columns), 'Date', datetime.today().strftime('%d-%m-%Y'))
+data.to_json('data/allTeams/'+ datetime.today().strftime('%d-%m-%Y') + 'advStas.json')
+
+#Players advanced stats
+
+# Send a GET request to the website
+
+print('Getting advanced stats for teams:')
+url = 'http://www.espn.com/nba/hollinger/statistics'
+response = requests.get(url)
+
+# Parse the HTML content using BeautifulSoup
+soup = BeautifulSoup(response.content, 'html.parser')
+
+# Find the div element with class='page-numbers'
+page_numbers_div = soup.find('div', {'class': 'page-numbers'})
+
+# Extract the text contained within the div element
+page_numbers_text = page_numbers_div.text.strip()
+
+# Print the extracted text
+
+numberPages = int(page_numbers_text[-1])
+
+playersAdv = pd.DataFrame()
+
+for i in range(1,numberPages+1):
+    url = 'http://www.espn.com/nba/hollinger/statistics/_/page/' + str(i)
+    data = pd.read_html(url)[0].iloc[1:]
+    data.columns = data.iloc[0]
+    data = data.iloc[1:, 1:].reset_index()
+    data = data.iloc[:,1:]
+    data.insert(len(data.columns), 'Date', datetime.today().strftime('%d-%m-%Y'))
+    playersAdv = playersAdv.append(data)
     
+playersAdv.reset_index()
+playersAdv = playersAdv.drop_duplicates()
+playersAdv = playersAdv[playersAdv.PLAYER != 'PLAYER']
+playersAdv = playersAdv.reset_index()
+playersAdv = playersAdv.iloc[:,1:]
+
+playersAdv.to_json('data/allPlayers/'+ datetime.today().strftime('%d-%m-%Y') + 'advStas.json')
+
     
 end = time.time()
 print('Time elapsed = ' + str(end - start) + ' seconds')
